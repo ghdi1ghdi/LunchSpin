@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		690442352CF82E640041A6DA /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 690442342CF82E640041A6DA /* ComposableArchitecture */; };
+		6992D26B2CF86A0800D98513 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = 6992D26A2CF86A0800D98513 /* NMapsMap */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		690442082CF80F670041A6DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +34,22 @@
 		690442112CF80F670041A6DA /* LunchSpinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunchSpinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6992D27C2CF8765500D98513 /* Exceptions for "LunchSpin" folder in "LunchSpin" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 690441F62CF80F660041A6DA /* LunchSpin */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		690441F92CF80F660041A6DA /* LunchSpin */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6992D27C2CF8765500D98513 /* Exceptions for "LunchSpin" folder in "LunchSpin" target */,
+			);
 			path = LunchSpin;
 			sourceTree = "<group>";
 		};
@@ -52,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				690442352CF82E640041A6DA /* ComposableArchitecture in Frameworks */,
+				6992D26B2CF86A0800D98513 /* NMapsMap in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +132,8 @@
 			);
 			name = LunchSpin;
 			packageProductDependencies = (
+				690442342CF82E640041A6DA /* ComposableArchitecture */,
+				6992D26A2CF86A0800D98513 /* NMapsMap */,
 			);
 			productName = LunchSpin;
 			productReference = 690441F72CF80F660041A6DA /* LunchSpin.app */;
@@ -195,6 +217,10 @@
 			);
 			mainGroup = 690441EE2CF80F660041A6DA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				690442332CF82E640041A6DA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				6992D2692CF86A0800D98513 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 690441F82CF80F660041A6DA /* Products */;
 			projectDirPath = "";
@@ -399,6 +425,7 @@
 				DEVELOPMENT_TEAM = F6ZUW7X85D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LunchSpin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +455,7 @@
 				DEVELOPMENT_TEAM = F6ZUW7X85D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LunchSpin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +586,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		690442332CF82E640041A6DA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.16.1;
+			};
+		};
+		6992D2692CF86A0800D98513 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/navermaps/SPM-NMapsMap";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		690442342CF82E640041A6DA /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 690442332CF82E640041A6DA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		6992D26A2CF86A0800D98513 /* NMapsMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6992D2692CF86A0800D98513 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */;
+			productName = NMapsMap;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 690441EF2CF80F660041A6DA /* Project object */;
 }
